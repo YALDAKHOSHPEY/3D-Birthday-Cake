@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Surprise</title>
+	<title>Birthday Surprise</title>
 	<link rel="icon" href="/public/favicon.ico" type="image/x-icon">
 	<link href="style.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,16 +15,16 @@
 <body>
 	<div id="volume-reminder">
 		<div id="volume-icon">🔊</div>
-		<p>請調高音量然後點我</p>
+		<p>Turn up the volume and click me</p>
 	</div>
 	<audio id="happy-birthday-audio">
 		<source src="/happy-birthday.mp3" type="audio/mpeg">
 	</audio>
 	<div id="hold-reminder">
-		<p>長按螢幕來吹蠟燭</p>
+		<p>Hold the screen to blow out the candles</p>
 	</div>
 	<div id="congratulation-overlay">
-		<div id="congratulation-text">生日快樂！</div>
+		<div id="congratulation-text">Happy Birthday!</div>
 	</div>
 	<script>
 		const audio = document.getElementById('happy-birthday-audio');
@@ -38,7 +38,7 @@
 			}, 1000);
 		})
 
-		// 控制音量提醒的顯示和隱藏
+		// Control the display of volume reminder
 		window.addEventListener('load', function () {
 			volumeReminder.classList.add('show');
 		});
